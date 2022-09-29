@@ -41,7 +41,9 @@ For today's activity, please follow these instructions:
 
 1.  Organize into small groups of 2-3 people. Circle around one laptop and designate one person to be the main typer for today.
     
-2.  Clone the following project template to begin: [https://github.com/knathanp/cse210-unit02-ta](https://github.com/knathanp/cse210-unit02-ta)
+2.  Begin by cloning this project template by clicking the `Use this template` button.
+
+3. Clone the newly created repository to your laptop.
     
 3.  Open and run the project in VS Code. You should be able to see the text "Welcome to the program." displayed in the terminal.
     
@@ -70,3 +72,8 @@ For today's activity, please follow these instructions:
 11.  In your `Program.cs` file, create a phone number, and display it.
     
 12.  Change your `Address` class so that it also has a phone number as a member variable. Update the Address's Display function to call the phone number's display function after the other parts of the address are displayed. Then, update your `Program.cs` file to add a phone number to the addresses you declared previously.
+
+
+## Sample Solution
+
+See a sample solution in the `sample-solution` branch of this repository
