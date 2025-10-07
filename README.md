@@ -1,41 +1,6 @@
-Unit 02 - Team Activity
-=======================
+# Unit 02 - Team Activity
 
-Overview
---------
-
-Practice Class Fundamentals in C#
-
-Background
-----------
-
-You may refer back to the following:
-
-*   [Abstraction - The first principle](https://byui-cse.github.io/cse210-course-competency/abstraction/materials/the-first-principle.html)
-    
-*   [Classes in C#](https://video.byui.edu/media/t/1_ye5qy14x) (9 min video)
-    
-*   [Class Methods in C#](https://video.byui.edu/media/t/1_wbgk3tu1) (8 min video)
-    
-
---------
-### A side note:
-
-Static Functions
-
-After watching these videos you can now understand where the `static` keyword fits in.
-
-As discussed, all member functions must run in the context of an object. This is the variable name that comes before the dot (for example, the `book1` variable in `book1.DisplayInfo()` ). This is almost always what we want, when we are programming with classes.
-
-If you want a function that does not run in the context of an object, you can use the `static` keyword. This says that the function can run on its own, without any context.
-
-Previously, when you were writing functions like `Main` or other non-object-oriented functions in your first few programs, you did not want them to run in the context of an object, because you had not created any yet. For this reason, those functions were static. You will still want `Main` to be a static function, but outside of Main, nearly all of your functions now will be member functions that you want the context of an object for, so you will not be using static very much anymore.
-
---------------
-
-
-Activity Instructions
----------------------
+## Activity Instructions
 
 For today's activity, please follow these instructions:
 
@@ -47,17 +12,36 @@ For today's activity, please follow these instructions:
     
 3.  Open and run the project in VS Code. You should be able to see the text "Welcome to the program." displayed in the terminal.
     
-4.  Open the empty file `Address.cs`. In this file, create a new data type for a street address with the following member variables:
+4.  Open the empty file `Address.cs`. This class will be used to represent a street address. In this file, create this new data type for a street address by creating the following member variables:
     
     * street  
     * city
     * state
+    * zip code
         
-5.  Create a member function `DisplayMailingLabel()` that displays an address with the street on the first line, and the city and state on the second with a comma separating them.
+5.  Create a member function `DisplayMailingLabel()` that displays an address with the street on the first line, and the city, state, and zip code on the second with a comma separating the city and state, like this:
+
+    ```text
+    525 S. Center St.
+    Rexburg, ID 83460
+    ```
     
 6.  In your `Program.cs` file, create a new `Address` object, set the member variables to something of your choosing, and call the member function to display the address.
     
-7.  Add a constructor to the `Address` class to set the member variables to reasonable default values.
+7.  Add a constructor to the `Address` class to set the member variables to reasonable default values. 
+
+    Note: Constructors are special methods that are called automatically when an object is created. Their purpose is to help set up the initial state of an object. The name of a constructor must match the class name, and the return type is left empty (not even void).
+
+    For example:
+
+    ```c#
+    public Address()
+    {
+        _street = "123 Anystreet St";
+        _city   = "Anytown";
+        _state  = "Idaho";
+        _zip    = 88888;
+    }   
     
 8.  In your `Program.cs` file, create a second `Address` object and call the display member function for it, to see your default values rendered.
     
