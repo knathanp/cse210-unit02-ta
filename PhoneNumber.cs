@@ -1,24 +1,21 @@
 using System;
 
-namespace Cse210_Unit02_Ta
+
+public class PhoneNumber
 {
-    public class PhoneNumber
+    // Member variables
+    public string _areaCode = "";
+    public string _prefix = "";
+    public string _suffix = "";
+
+    public PhoneNumber()
     {
-        // Member variables
-        // Could use int or string here
-        public string AreaCode = "";
-        public string Prefix = "";
-        public string Suffix = "";
-
-        public PhoneNumber()
-        {
-            // empty constuctor
-        }
-
-        public void DisplayNumber()
-        {
-            Console.WriteLine($"({AreaCode}) {Prefix}-{Suffix}");
-        }
-
+        // empty constructor
     }
+
+    public void DisplayNumber()
+    {
+        Console.WriteLine($"({_areaCode}) {_prefix}-{_suffix}");
+    }
+
 }

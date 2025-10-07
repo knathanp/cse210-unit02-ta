@@ -1,34 +1,34 @@
 using System;
 
-namespace Cse210_Unit02_Ta
+
+public class Address
 {
-    public class Address
+    // Member variables (i.e., attributes)
+    public string _street = "";
+    public string _city = "";
+    public string _state = "";
+    public string _zip = "";
+    public PhoneNumber _phone = new PhoneNumber();
+
+    // Constructor
+    public Address()
     {
-        // Member variables (i.e., attributes)
-        public string street = "";
-        public string city = "";
-        public string state = "";
-        public PhoneNumber phone = new PhoneNumber();
-
-        // Constructor
-        public Address()
-        {
-            street = "123 Any Street";
-            city = "Nowhere";
-            state = "Idaho";
-            phone.AreaCode = "208";
-            phone.Prefix = "867";
-            phone.Suffix = "5309";
-        }
-
-        // Display a mailing label
-        public void DisplayMailingLabel()
-        {
-            Console.WriteLine(street);
-            Console.WriteLine($"{city}, {state}");
-            phone.DisplayNumber(); // use the DisplayNumber() method in the PhoneNumber class
-            Console.WriteLine();
-        }
-
+        _street = "123 Anystreet";
+        _city = "Nowhere";
+        _state = "Idaho";
+        _phone._areaCode = "208";
+        _phone._prefix = "867";
+        _phone._suffix = "5309";
     }
+
+    // Display a mailing label
+    public void DisplayMailingLabel()
+    {
+        Console.WriteLine(_street);
+        Console.WriteLine($"{_city}, {_state} {_zip}");
+        _phone.DisplayNumber(); // use the DisplayNumber() method in the PhoneNumber class
+        Console.WriteLine();
+    }
+
 }
+
