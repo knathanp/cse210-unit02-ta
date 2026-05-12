@@ -2,7 +2,7 @@
 
 ## Activity Instructions
 
-For today's activity, please follow these instructions:
+For today's activity, we will create a simple program to keep track of an address book. This program will consist of a Program.cs file, an Address.cs file, and a PhoneNumber.cs file. These will represent the idea or abstraction of an Address and of a Phone Number. Please follow these instructions:
 
 1.  Organize into small groups of 2-3 people. Circle around one laptop and designate one person to be the main typer for today.
     
@@ -43,19 +43,19 @@ For today's activity, please follow these instructions:
         _zip    = 88888;
     }   
     
-8.  In your `Program.cs` file, create a second `Address` object and call the display member function for it, to see your default values rendered.
+8.  In your `Program.cs` file, create a second `Address` object and call the `DisplayMailingLabel()` member function for it, to see your default values rendered.
     
 9.  In the empty `PhoneNumber.cs` file create a new class for a phone number that has the following member variables:
     
-    * Area Code       
-    * Prefix        
-    * Suffix
+    * _area_code       
+    * _prefix        
+    * _suffix
         
-10.  Create a member function `DisplayNumber` that outputs the phone number in the format: `(xxx) xxx-xxxx`, where the xxx's represent the area code, prefix, and suffix.
+10.  Create a member function `DisplayNumber()` that outputs the phone number in the format: `(xxx) xxx-xxxx`, where the xxx's represent the area code, prefix, and suffix.
     
 11.  In your `Program.cs` file, create a phone number, and display it.
     
-12.  Change your `Address` class so that it also has a phone number as a member variable. Update the Address's Display function to call the phone number's display function after the other parts of the address are displayed. Then, update your `Program.cs` file to add a phone number to the addresses you declared previously.
+12.  Change your `Address` class so that it also has a `PhoneNumber`as a member variable. Update the `Address`'s `DisplayLabel()` method to call the `PhoneNumber`'s `DisplayNumber()` method after the other parts of the address are displayed. Then, update your `Program.cs` file to add a phone number to the addresses you declared previously.
 
 
 ## Sample Solution
